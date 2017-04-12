@@ -1,1 +1,9 @@
-events#index page
+<h1>Events</h1>
+
+<% @events.each do |current_event| %> <!-- Using the @events instance variable, create a partial render for single event display. -->
+  <%= render 'single_event', event: current_event %>
+<% end %>
+
+<p>
+  <%= link_to 'New Event', new_event_path %>
+</p>

@@ -1,0 +1,7 @@
+<!-- leading _ indicates a partial view. -->
+
+<div class="event">
+  <h3>Name: <%= event.name %></h3>
+  <%= event.date %><br />
+  <%= link_to "#{event.name}", event_path(event) %> <!-- Note the inclusion of event path to link. OTHERWISE IT DON'T GO NOWHERE. -->
+</div>

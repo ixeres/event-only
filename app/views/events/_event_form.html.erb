@@ -1,0 +1,21 @@
+<%= form_for event do |f| %> <!-- Removed the '@' from event. -->
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :capacity %>
+    <%= f.text_field :capacity %>
+  </p>
+
+  <p>
+    <%= f.label :date %>
+    <%= f.text_area :date %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>
